@@ -12,7 +12,7 @@ today = pd.to_datetime(date.today()).strftime("%Y-%m-%d")
 yesterday =pd.to_datetime(date.today()-timedelta(1)).strftime("%Y-%m-%d")
 
 
-AlphaVandtageAPI="G1UUK5RP97UV21X8"
+AlphaVandtageAPI="yours here"
 
 
 #
