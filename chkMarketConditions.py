@@ -4,8 +4,6 @@ from IPython.display import display
 
 
 class MarketCondition:
-    def __init__(self, name):
-        self.name = name
 
     def is_market_open_today(self):
         today_str = date.today().strftime("%Y-%m-%d")
@@ -21,6 +19,6 @@ class MarketCondition:
 
         else:
             print(f"Today {today_str} stock market is NOT open.")
-            is_market_open = True
+            is_market_open = False
 
         return is_market_open

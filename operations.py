@@ -3,7 +3,7 @@ from datetime import timedelta
 from datetime import datetime
 
 
-class RetrieveHistoricalData:
+class RetrieveYFData:
     def __init__(self, symbol):
         self.symbol = symbol
 
@@ -16,3 +16,8 @@ class RetrieveHistoricalData:
 
         closing_price = (stock_history.at[stock_history.index[0], "Close"])
         return closing_price
+
+    def get_current_price(self, ticker):
+        stock = yf.Ticker(ticker)
+        price = stock.info['regularMarketPrice']
+        return price
